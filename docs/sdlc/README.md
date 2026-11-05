@@ -5,7 +5,7 @@
 <!-- sdlc:auto:start overview -->
 Build an age calculator app
 
-**Documentation version:** v1
+**Documentation version:** v2
 <!-- sdlc:auto:end overview -->
 
 ## Contents
@@ -14,14 +14,14 @@ Build an age calculator app
 | Document | State |
 |---|---|
 | [Requirements](requirements/README.md) | v1 approved |
-| [Architecture](architecture/README.md) | 1 entry |
+| [Architecture](architecture/README.md) | 13 entries |
 | [Development](development/README.md) | 1 entry |
 | [Testing](testing/README.md) | 1 entry |
 | [Deployment](deployment/README.md) | 1 entry |
 | [Maintenance](maintenance/README.md) | 1 entry |
-| [Data model](architecture/data-model.md) | not generated yet |
-| [API (OpenAPI)](architecture/api/openapi.yaml) | not generated yet |
-| [Decisions (ADRs)](architecture/adr/README.md) | 0 decisions |
+| [Data model](architecture/data-model.md) | generated |
+| [API (OpenAPI)](architecture/api/openapi.yaml) | generated |
+| [Decisions (ADRs)](architecture/adr/README.md) | 4 decisions |
 | [Sprint plan](development/sprint-plan.md) | not generated yet |
 | [Developer guide](development/developer-guide.md) | not generated yet |
 | [API reference](development/api-reference.md) | 0 routes |
@@ -31,7 +31,7 @@ Build an age calculator app
 | [Runbook](deployment/runbook.md) | not deployed yet |
 | [Release notes](deployment/release-notes.md) | 0 releases |
 | [Traceability matrix](traceability-matrix.md) | 8 requirements |
-| [Changelog](CHANGELOG.md) | 1 version |
+| [Changelog](CHANGELOG.md) | 2 versions |
 <!-- sdlc:auto:end contents -->
 
 ## Open gaps
@@ -45,8 +45,12 @@ Build an age calculator app
 
 ### Architecture
 
-- Architecture phase has not started; no design docs, diagrams, screen inventory, or component/technology mapping available.
-- No confirmation yet of how the approved stack (especially PostgreSQL/pgvector, which the requirements say will largely sit empty) is actually structured for this lightweight, stateless app.
+- Input does not state which requirement IDs (US-001..US-008) this architecture satisfies -- explicit traceability from requirements to architecture is missing and should be confirmed with the requirements author.
+- No schema, tables, or migration plan defined yet since the database is intentionally empty in this version -- flag if/when future anonymous usage-count feature is scoped.
+- No explicit requirement ID link provided in input; likely maps to a core 'calculate age' requirement but this is not confirmed.
+- No explicit requirement ID link provided in input; likely maps to a validation/error-handling requirement but this is not confirmed.
+- Request/response schema and auth requirements for this endpoint are not specified in the input.
+- Input does not clarify when/whether the frontend actually calls this endpoint versus relying solely on client-side validation -- this should be confirmed during development.
 
 ### Development
 

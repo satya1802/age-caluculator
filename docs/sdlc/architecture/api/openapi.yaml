@@ -2,6 +2,33 @@
 openapi: 3.1.0
 info:
   title: Age caluculator
-  version: architecture-v0
+  version: architecture-v1
   description: Designed API from the approved architecture (not extracted from code).
-paths: {}
+paths:
+  /api/validate-date:
+    post:
+      summary: Optional stateless check that a supplied date of birth is a valid,
+        non-future date. Stores nothing.
+      description: Optional stateless check that a supplied date of birth is a valid,
+        non-future date. Stores nothing.
+      operationId: post_api_validate_date
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              description: '{ "dob": "YYYY-MM-DD" }'
+      responses:
+        '200':
+          description: '{ "valid": true, "reason": null }'
+  /healthz:
+    get:
+      summary: Liveness/readiness probe for the lightweight backend serving the SPA.
+      description: Liveness/readiness probe for the lightweight backend serving the
+        SPA.
+      operationId: get_healthz
+      parameters: []
+      responses:
+        '200':
+          description: '{ "status": "ok" }'
