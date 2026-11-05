@@ -9,12 +9,12 @@ Built from recorded links, not written by a model: requirement key → plan item
 <!-- sdlc:auto:start matrix -->
 | Requirement | Epic | Title | Plan items | Sprint | Design | Code | Commits | Ticket | Tests | AC tests | Deployed |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| US-001 | EPIC-001 | Enter date of birth via a date picker | — | — | — | — | — | not started | not run | 0/3 tested · 0/3 passing | — |
-| US-002 | EPIC-001 | Calculate age in years, months and days | — | — | — | — | — | not started | not run | 0/3 tested · 0/3 passing | — |
-| US-003 | EPIC-001 | Display the age result | — | — | — | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
-| US-004 | EPIC-001 | Reject future dates of birth with a clear error | — | — | — | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
-| US-005 | EPIC-002 | Use the calculator anonymously with no account | — | — | — | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
-| US-006 | EPIC-002 | Use the calculator free of charge | — | — | — | — | — | not started | not run | 0/1 tested · 0/1 passing | — |
-| US-007 | EPIC-002 | Entered date of birth not retained after the session | — | — | — | — | — | not started | not run | 0/1 tested · 0/1 passing | — |
-| US-008 | EPIC-002 | Responsive single-page experience on mobile and desktop | — | — | — | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
+| US-001 | EPIC-001 | Enter date of birth via a date picker | US-001 | 1 | web_app | — | — | not started | not run | 0/3 tested · 0/3 passing | — |
+| US-002 | EPIC-001 | Calculate age in years, months and days | US-002 | 1 | POST /api/validate-date, api, web_app | — | — | not started | not run | 0/3 tested · 0/3 passing | — |
+| US-003 | EPIC-001 | Display the age result | US-003 | 1 | web_app | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
+| US-004 | EPIC-001 | Reject future dates of birth with a clear error | US-004 | 1 | POST /api/validate-date, api, web_app | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
+| US-005 | EPIC-002 | Use the calculator anonymously with no account | US-005 | 1 | web_app | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
+| US-006 | EPIC-002 | Use the calculator free of charge | US-006 | 1 | web_app | — | — | not started | not run | 0/1 tested · 0/1 passing | — |
+| US-007 | EPIC-002 | Entered date of birth not retained after the session | US-007 | 1 | web_app | — | — | not started | not run | 0/1 tested · 0/1 passing | — |
+| US-008 | EPIC-002 | Responsive single-page experience on mobile and desktop | US-008 | 1 | web_app | — | — | not started | not run | 0/2 tested · 0/2 passing | — |
 <!-- sdlc:auto:end matrix -->
